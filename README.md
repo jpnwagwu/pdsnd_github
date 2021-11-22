@@ -7,7 +7,7 @@
 Interactive Shell terminal that filters data
 
 ### Description
-This is an interactive shell build using python, numpy and pandas. This sorts and filters data based on users input and produces some descriptive statistics
+This is an interactive shell build using python, numpy and pandas. This sorts and filters data based on users input and produces some descriptive statistics. It filters data in the chicago.csv, washington.csv or new_york_city.csv file
 
 ### Files used
 FIles used include chicago.csv, washington.csv and new_york_city.csv
