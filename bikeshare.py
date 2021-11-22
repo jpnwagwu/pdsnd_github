@@ -173,6 +173,7 @@ def user_stats(df):
     print("The count of user types is ", count_user)
 
     # TO DO: Display counts of gender
+    #use try and except for error handling
     while True:
         try:
             gender_count = df['Gender'].value_counts()
