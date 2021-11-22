@@ -27,8 +27,8 @@ def get_filters():
                 break
             if valid in ('no','n'):
                 continue
-                   
-        else:    
+
+        else:
             print('Error: Please select valid input. Type city name in Full')
 
     # TO DO: get user input for month (all, january, february, ... , june)
@@ -38,7 +38,7 @@ def get_filters():
         if answer in answers:
             if answer == 'month' or answer == 'both':
                 while True:
-                    months = ['all','january', 'february', 'march', 'april', 'may', 'june'] 
+                    months = ['all','january', 'february', 'march', 'april', 'may', 'june']
                     month = str(input('Which month? january, february, march, april, may or june or "all" for no filter: ')).lower()
                     if month in months:
                         break
@@ -46,7 +46,7 @@ def get_filters():
                         print('Error: Please select valid input. Type month in Full')
                 if answer == 'month':
                     day = 0
-            
+
 
                 # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
             if answer == 'day of week' or answer == 'both':
@@ -59,12 +59,11 @@ def get_filters():
                         print('Error: Please select valid input. Type day of week in Full')
                 if answer == 'day of week':
                     month= 0
-            break            
+            break
         else:
             print('Error: Please select valid input. Type "month" or "day of week" or "both"in Full')
-        
-     
-            
+
+
     print('-'*40)
     return city, month, day
 
@@ -111,7 +110,7 @@ def time_stats(df):
     # TO DO: display the most common month
     common_month = df['month'].mode()[0]
     print("The most common month is ", common_month)
-  
+
     # TO DO: display the most common day of week
     common_day = df['day_of_week'].value_counts().idxmax()
     print("The most common day of the week is ", common_day)
@@ -174,13 +173,14 @@ def user_stats(df):
     print("The count of user types is ", count_user)
 
     # TO DO: Display counts of gender
+    #use try and except for error handling
     while True:
         try:
             gender_count = df['Gender'].value_counts()
             print("The most count of gender is ", gender_count)
         except Exception as e:
             print("The most count of gender is unavailable")
-            
+
         break
 
     while True:
@@ -211,18 +211,18 @@ def raw_data(df):
     if display in ('yes','y'):
         n = 0
         print(df.iloc[n:n+5])
-    
+
 
     # TO DO: Display next five rows of data
     display = str(input('Would you like to see the next five rows of raw data? Type "yes" or "no": ')).lower()
     if display in ('yes','y'):
         n = 5
         print(df.iloc[n:n+5])
-    
-    
+
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
+
 def main():
     while True:
         city, month, day = get_filters()
