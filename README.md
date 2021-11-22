@@ -1,17 +1,16 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+22nd November, 2021
 
 ### Project Title
-Replace the Project Title
+Interactive Shell
 
 ### Description
-Describe what your project is about and what it does
+This is an interactive shell build using python, numpy and pandas. This sorts and filters data based on users input and produces some descriptive statistics
 
 ### Files used
-Include the files used
+FIles used include chicago.csv, washington.csv and new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Thanks to udacity for the wonderful idea and Tutelage
