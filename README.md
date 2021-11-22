@@ -4,7 +4,7 @@
 22nd November, 2021
 
 ### Project Title
-Interactive Shell
+Interactive Shell terminal that filters data
 
 ### Description
 This is an interactive shell build using python, numpy and pandas. This sorts and filters data based on users input and produces some descriptive statistics
